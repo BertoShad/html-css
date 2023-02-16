@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 5</title>
+</head>
+<body>
+    <h1>Formulário 5</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <div>
+                <input type="radio" name="ismas" id="ismas" value="M"> <label for="ismas">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="ismas" id="isfem" value="F"> <label for="isfem">Feminino</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <div>
+                <input type="checkbox" name="ifut" id="ifut"> <label for="ifut">Futebol</label>
+            </div>
+            <div>
+                <input type="checkbox" name="ifuts" id="iftus"> <label for="iftus">Futsal</label>
+            </div>
+            <div>
+                <input type="checkbox" name="iral" id="iral"> <label for="iral">Rally</label>
+            </div>
+            <div>
+                <input type="checkbox" name="ibas" id="ibas"> <label for="ibas">Basquete</label>
+            </div>
+            <div>
+            <input type="checkbox" name="nfl" id="nfl"> <label for="nfl">Futebol Americano</label>
+            </div>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha sua cor</legend>
+            <div>
+                <label for="icor">Cor: </label>
+                <input type="color" name="icor" id="icor">
+            </div>
+            <div>
+                <label for="isat">Nível de satisfação: </label>
+                <input type="range" name="isat" id="isat" min="1" max="10"> 
+            </div>
+<br>            
+            <div>
+                <label for="ifoto">Coloque sua foto: </label>
+                <input type="file" name="ifoto" id="ifoto">
+            </div>
+        </fieldset>
+
+<br>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+
+
+    </form>
+</body>
+</html>

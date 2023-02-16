@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 4</title>
+
+
+
+</head>
+<body>
+    <h1 style="text-align: center;">Formulário 4</h1>
+    <fieldset>
+        <legend>Dados cadastrais</legend>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <div>
+                <label for="inome">Nome: </label>
+                <input type="text" name="inome" id="inome" required minlength="5" maxlength="20">
+            </div>
+        <br>
+            <div>
+                <label for="iemail">Email: </label>
+                <input type="email" name="iemail" id="iemail" required autocomplete="email" placeholder="johndoe@example.yes">
+            </div>
+        <br>
+            <div>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="itel" id="itel" required autocomplete="tel" pattern="^[0-9]{3}-[0-9]{4}-[0-9]{4}$" placeholder="(xxx) xxxx-xxxx">
+        
+            </div>
+    </fieldset>
+    <br>
+        <div>
+            <input type="submit" value="Enviar" onclick="aviso()">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+
+    <script>
+
+        function aviso() {
+            window.alert('Enviado com sucesso!')
+        }
+
+    </script>
+
+</body>
+</html>
