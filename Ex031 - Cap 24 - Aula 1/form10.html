@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 10</title>
+</head>
+<body>
+    <h1>Exemplo de formulário com output e JS</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend> Preencha </legend>
+            <div>
+                <label for="iano">Ano que você nasceu: </label>
+                <input type="number" name="iano" id="iano" min="1940" max="2015" required oninput="calcIdade()"><br>
+                Sua idade: <output id="ival">0</output>
+            </div>
+<br>
+<br>
+           <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+           </div>
+        </fieldset>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            ival.innerHTML = Number(atual) - Number(iano.value)
+        }
+        ival.innerHTML = ''    
+    </script>
+</body>
+</html>
